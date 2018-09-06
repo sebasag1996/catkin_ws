@@ -1,0 +1,6 @@
+<!--this launches all the launch files-->
+<launch>
+	<include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+	<include file="$(find two_wheels_description)/launch/spawn.launch"/>
+	<node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py"/>
+</launch>
